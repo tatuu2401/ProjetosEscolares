@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoMath - Aprenda Matemática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popups.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="formula-popup1" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Geometria Plana</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Área do triângulo: (base × altura)/2</li>
+                    <li>Área do retângulo: base × altura</li>
+                    <li>Área do círculo: π × raio²</li>
+                    <li>Teorema de Pitágoras: a² + b² = c²</li>
+                    <li>Perímetro do círculo: 2πr</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup2" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Análise Gráfica</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Função linear: f(x) = ax + b</li>
+                    <li>Função quadrática: f(x) = ax² + bx + c</li>
+                    <li>Coeficiente angular: m = Δy/Δx</li>
+                    <li>Equação da reta: y - y₁ = m(x - x₁)</li>
+                    <li>Distância entre pontos: √[(x₂-x₁)² + (y₂-y₁)²]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup3" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Álgebra</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Bhaskara: x = [-b ± √(b² - 4ac)]/2a</li>
+                    <li>Fatoração: a² - b² = (a + b)(a - b)</li>
+                    <li>Produtos notáveis: (a + b)² = a² + 2ab + b²</li>
+                    <li>Logaritmo: logₐb = c ⇔ aᶜ = b</li>
+                    <li>Propriedade log: log(ab) = log(a) + log(b)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup4" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Probabilidades</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Probabilidade: P(A) = n(A)/n(S)</li>
+                    <li>Probabilidade condicional: P(A|B) = P(A∩B)/P(B)</li>
+                    <li>Eventos independentes: P(A∩B) = P(A) × P(B)</li>
+                    <li>Teorema de Bayes: P(A|B) = [P(B|A) × P(A)]/P(B)</li>
+                    <li>Probabilidade união: P(A∪B) = P(A) + P(B) - P(A∩B)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup5" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Combinatória</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Combinação: C(n,p) = n!/(p!(n-p)!)</li>
+                    <li>Arranjo: A(n,p) = n!/(n-p)!</li>
+                    <li>Permutação: P(n) = n!</li>
+                    <li>Permutação com repetição: n!/(n₁!n₂!...nₖ!)</li>
+                    <li>Combinação com repetição: CR(n,p) = C(n+p-1,p)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup6" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Aritmética</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>Razão: a/b</li>
+                    <li>Proporção: a/b = c/d → a×d = b×c</li>
+                    <li>Regra de três: a/b = c/x → x = (b×c)/a</li>
+                    <li>Porcentagem: x% = x/100</li>
+                    <li>Juros simples: J = C × i × t</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="formula-popup7" class="popup formula-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fórmulas de Sequências e Séries</h2>
+            <div class="popup-body">
+                <ul class="formula-list">
+                    <li>PA: aₙ = a₁ + (n-1)r</li>
+                    <li>Soma PA: Sₙ = (a₁ + aₙ)n/2</li>
+                    <li>PG: aₙ = a₁ × qⁿ⁻¹</li>
+                    <li>Soma PG: Sₙ = a₁(1 - qⁿ)/(1 - q)</li>
+                    <li>Soma PG infinita: S = a₁/(1 - q) (|q| < 1)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Cabeçalho Moderno -->
+        <header>
+            <div class="logo-container">
+                <img src="WhatsApp Image 2025-08-18 at 09.38.40.jpeg" alt="DuoMath Logo" class="logo">
+                <h1>DuoMath</h1>
+            </div>
+            <div class="header-buttons">
+                <!-- Botão Modo Noturno -->
+                <button id="dark-mode-toggle" class="header-button dark-mode-btn" title="Modo Noturno">
+                    <i class="fas fa-moon"></i>
+                    <span class="btn-text">Modo Noturno</span>
+                </button>
+                
+                <a href="start.html" class="header-button back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="btn-text">Voltar</span>
+                </a>
+                
+                <a href="contacts.html" class="header-button contact-button">
+                    <i class="fas fa-envelope"></i>
+                    <span class="btn-text">Contato</span>
+                </a>
+            </div>
+        </header>
+
+    
+
+        <!-- Área do Mascote -->
+        <div class="mascot-container">
+            <div class="mascot">
+                <img src="imgs/mascote-feliz.png" alt="Mascote" class="mascot-img">
+                <div class="speech-bubble">
+                    <p id="mascot-message">Vamos dominar a matemática juntos!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grade de Botões Estilizados -->
+<div class="button-grid">
+    <!-- Geometria Plana -->
+    <button class="math-btn btn-geometria" data-popup="popup1">
+        <i class="fas fa-shapes"></i>
+        Geometria Plana
+    </button>
+    
+    <!-- Análise Gráfica -->
+    <button class="math-btn btn-graficos" data-popup="popup2">
+        <i class="fas fa-chart-line"></i>
+        Análise Gráfica
+    </button>
+    
+    <!-- Álgebra -->
+    <button class="math-btn btn-algebra" data-popup="popup3">
+        <i class="fas fa-square-root-alt"></i>
+        Álgebra
+    </button>
+    
+    <!-- Teoria das Probabilidades -->
+    <button class="math-btn btn-probabilidade" data-popup="popup4">
+        <i class="fas fa-dice"></i>
+        Probabilidades
+    </button>
+    
+    <!-- Análise Combinatória -->
+    <button class="math-btn btn-combinatoria" data-popup="popup5">
+        <i class="fas fa-project-diagram"></i>
+        Combinatória
+    </button>
+    
+    <!-- Aritmética -->
+    <button class="math-btn btn-aritmetica" data-popup="popup6">
+        <i class="fas fa-divide"></i>
+        Aritmética
+    </button>
+    
+    <!-- Sequências e Séries -->
+    <button class="math-btn btn-series" data-popup="popup7">
+        <i class="fas fa-infinity"></i>
+        Séries
+    </button>
+</div>
+        </div>
+    </div>
+
+<div id="popup1" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-shapes"></i>
+        </div>
+        <h2>Geometria Plana</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/th5k6bzSDTA?si=uRv_N-3LK7brmH2B" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A geometria plana, também conhecida como geometria euclidiana, é a parte da matemática que estuda as figuras geométricas que possuem duas dimensões (comprimento e largura), sem volume.</p>
+            <div class="formula-btn-container">
+                <button class="formula-btn" data-formula-popup="formula-popup1">
+                    <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+                </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicio-geo.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 2 - Análise Gráfica -->
+<div id="popup2" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <h2>Análise Gráfica</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/XzZGAwfKs_k?si=lS1xiDJvoq8b91z7" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A Análise Gráfica é uma ferramenta importante na matemática e nas ciências em geral, pois permite representar relações entre grandezas por meio de gráficos. Esses gráficos podem ser cartesianos, de barras, linhas, setores ou outros, e ajudam a identificar tendências, padrões, crescimento ou decaimento de funções. Além disso, a representação gráfica de funções permite compreender seu comportamento, como crescimento, concavidade, máximos e mínimos. Essa habilidade é essencial tanto para resolver problemas matemáticos quanto para interpretar dados em estatísticas, economia e física.</p>
+            <div class="formula-btn-container">
+                <button class="formula-btn" data-formula-popup="formula-popup2">
+                    <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+                </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicio_analise.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 3 - Álgebra -->
+<div id="popup3" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-square-root-alt"></i>
+        </div>
+        <h2>Álgebra</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/8NNA-8rimNs?si=ErHcXk8SO8xflqZ_" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A Álgebra é um dos principais ramos da matemática, focando na generalização das operações aritméticas por meio do uso de símbolos e letras. Esses símbolos representam números desconhecidos ou variáveis, permitindo resolver equações, manipular expressões algébricas e estudar funções. A álgebra é fundamental tanto para a matemática básica quanto para a avançada, sendo a base de áreas como cálculo, estatística e física. Ela desenvolve o raciocínio lógico e a capacidade de abstração, habilidades importantes para a resolução de problemas em diversas áreas do conhecimento.</p>
+            <div class="formula-btn-container">
+                <button class="formula-btn" data-formula-popup="formula-popup3">
+                    <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+                </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicios_algebra.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 4 - Teoria das Probabilidades -->
+<div id="popup4" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-dice"></i>
+        </div>
+        <h2>Teoria das Probabilidades</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/iNCkGogNtKI?si=FgwiK7isKrQedggN" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A Teoria das Probabilidades é um campo da matemática que trata do estudo das chances de ocorrência de eventos. Utilizando conceitos como espaço amostral, eventos, probabilidade clássica e condicional, esse ramo permite modelar situações incertas e prever resultados mais prováveis. É amplamente utilizada em áreas como estatística, jogos, economia, ciências atuariais e análise de risco. A compreensão de probabilidades desenvolve a habilidade de raciocinar com base em dados e incertezas, o que é crucial tanto para a vida cotidiana quanto para pesquisas científicas.
+</p>
+<div class="formula-btn-container">
+    <button class="formula-btn" data-formula-popup="formula-popup4">
+        <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+    </button>
+</div>
+            
+            <div class="actions-container">
+                <a href="exercicios_probabilidades.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 5 - Análise Combinatória -->
+<div id="popup5" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-project-diagram"></i>
+        </div>
+        <h2>Análise Combinatória</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/_8mZOSXCRp8?si=9l7tNhH99oBuHxwK" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A Análise Combinatória é o ramo da matemática que estuda as diferentes maneiras de agrupar, ordenar ou selecionar elementos de um conjunto, respeitando certas condições. As técnicas mais comuns envolvem arranjos, permutações e combinações. Esse estudo é essencial para resolver problemas que envolvem contagem e organização, servindo de base para a Teoria das Probabilidades e aplicações práticas como senhas, códigos e planejamento de eventos. Ela treina o raciocínio lógico e ajuda a lidar com situações complexas de forma sistemática.</p>
+            <div class="formula-btn-container">
+                <button class="formula-btn" data-formula-popup="formula-popup5">
+                    <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+                </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicios_combinatoria.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 6 - Aritmética, Razão e Proporção -->
+<div id="popup6" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-divide"></i>
+        </div>
+        <h2>Aritmética, Razão e Proporção</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zoFC82aPq1A?si=IrHHiN3Ug2gw5Lqb" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>A Aritmética é o ramo mais básico e antigo da matemática, responsável pelo estudo dos números e das operações fundamentais: adição, subtração, multiplicação e divisão. Ela também inclui o estudo de propriedades dos números inteiros, racionais, naturais e decimais. A aritmética é essencial para o cotidiano, desde fazer compras até entender conceitos mais complexos em áreas como finanças e engenharia. Dominar bem esse campo é fundamental para avançar nos demais ramos da matemática, pois fornece as bases operacionais e conceituais do pensamento matemático.
+</p>
+            <div class="formula-btn-container">
+            <button class="formula-btn" data-formula-popup="formula-popup6">
+                <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+            </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicio_aritmetica.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup 7 - Álgebra, Sequência e Séries -->
+<div id="popup7" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-icon">
+            <i class="fas fa-infinity"></i>
+        </div>
+        <h2>Álgebra, Sequências e Séries</h2>
+        <div class="popup-body">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/poyvpdAC4xI?si=9NJKFjmdugN9QPg9" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <p>Sequências e séries são tópicos da matemática que lidam com conjuntos de números organizados segundo uma regra específica. As sequências podem ser aritméticas, geométricas ou de outras naturezas, e ajudam a prever ou entender padrões numéricos. Já as séries são a soma dos termos de uma sequência, e aparecem com frequência em problemas de matemática financeira, física e computação. Estudar esses conceitos é essencial para o desenvolvimento do raciocínio matemático e para a resolução de problemas que envolvem padrões, crescimento e previsão.</p>
+            <div class="formula-btn-container">
+                <button class="formula-btn" data-formula-popup="formula-popup7">
+                    <i class="fas fa-square-root-alt"></i> Ver Fórmulas
+                </button>
+            </div>
+            
+            <div class="actions-container">
+                <a href="exercicios_serie.html" class="exercises-btn">
+                    <i class="fas fa-pencil-alt"></i> Exercícios
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="popups.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Estilos Específicos para Página Inicial */
+.start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+/* Mascote Hero */
+.mascot-hero {
+    position: relative;
+    margin-bottom: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero-mascot {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    box-shadow: 0 8px 25px rgba(26, 115, 232, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-speech-bubble {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    border-radius: 24px;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    animation: pulse 2s infinite;
+}
+
+.hero-speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: var(--white) transparent;
+}
+
+#hero-message {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    animation: textFadeIn 1s ease-out;
+}
+
+/* Seção do Título */
+.title-section {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    padding: 30px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(26, 115, 232, 0.3);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+    transform: translateZ(50px);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+    font-weight: 400;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de Ação */
+.start-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(26, 115, 232, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.start-button i {
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(26, 115, 232, 0.4);
+}
+
+.start-button:hover i {
+    transform: translateX(5px);
+}
+
+/* Animações */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.05); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-mascot {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .start-button {
+        padding: 15px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .title-section {
+        padding: 20px 25px;
+    }
+    
+    .hero-speech-bubble {
+        width: 180px;
+        padding: 15px 20px;
+    }
+    
+    #hero-message {
+        font-size: 1.1rem;
+    }
+}
